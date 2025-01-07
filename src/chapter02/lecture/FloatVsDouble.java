@@ -10,7 +10,7 @@ public class FloatVsDouble {
         float f2=1.000_000_01f;
         System.out.println("f2="+f2);
 
-        //double
+        //double (15자리)
         double d1=1.000_000_000_000_001;
         System.out.println("d1="+d1);
 
