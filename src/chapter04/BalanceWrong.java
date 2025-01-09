@@ -22,5 +22,11 @@ public class BalanceWrong {
             System.out.println("B가 크다.");
         else
             System.out.println("A와 B가 같다.");
+
+        if (!(a > b))
+            System.out.println("B가 크다.");
+        else if (!(a < b) )
+            System.out.println("B가 크다.");
+
     }
 }
