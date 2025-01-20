@@ -1,6 +1,6 @@
-package chpater05.lecture;
+package chapter05.lecture;
 
-import chpater05.PrintArray;
+import chapter05.PrintArray;
 
 public class ArrayCopyByForExample {
     public static void main(String[] args) {

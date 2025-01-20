@@ -1,4 +1,4 @@
-package chpater05;
+package chapter05;
 
 public class BubbleSort {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package chpater05.lecture;
+package chapter05.lecture;
 
 // Week enum은 요일을 표현하는 상수들의 집합
 // 각 상수(MONDAY,TUSDAY,...)는 Week 열거형의 인스턴스(Heap 메모리의 생성된 실체)

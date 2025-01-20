@@ -1,6 +1,4 @@
-package chpater05;
-
-import chpater05.lecture.ArrayInArrayExample;
+package chapter05;
 
 import java.util.Scanner;
 

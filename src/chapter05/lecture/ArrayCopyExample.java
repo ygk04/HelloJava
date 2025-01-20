@@ -1,4 +1,4 @@
-package chpater05.lecture;
+package chapter05.lecture;
 
 public class ArrayCopyExample {
     public static void main(String[] args) {

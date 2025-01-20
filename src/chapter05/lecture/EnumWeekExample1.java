@@ -1,4 +1,4 @@
-package chpater05.lecture;
+package chapter05.lecture;
 
 import java.util.Calendar;
 
