@@ -1,19 +1,24 @@
 package practice.homework.entity;
 
 public class User {
-    String name;
-    int money;
-    
-    public User(String name, int money) {
-        this.name = name;
-        this.money = 0;
+
+    private Wallet wallet;
+
+    public User(Wallet wallet) {
+        this.wallet = wallet;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                 name + '\'' +
-                ", money:'" + money + '\'' +
-                '}';
+    public Wallet getWallet() {
+        return wallet;
     }
+
+    String name;
+
+    
+    public User(String name ) {
+        this.name = name;
+
+    }
+
+
 }
