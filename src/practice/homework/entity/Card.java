@@ -1,6 +1,6 @@
 package practice.homework.entity;
 
-public class CardNumbers {
+public class Card {
 
 
 }
