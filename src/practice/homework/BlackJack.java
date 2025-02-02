@@ -9,7 +9,7 @@ public class BlackJack {
     public static void main(String[] args) {
 
         BlackJacktest game = new BlackJacktest(new Rule(), new Dealer(), new User("ygk"), new CardDeck());
-
+        game.start();
     }
 
 

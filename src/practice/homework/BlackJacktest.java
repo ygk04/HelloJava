@@ -1,9 +1,6 @@
 package practice.homework;
 
-import practice.homework.entity.CardDeck;
-import practice.homework.entity.Dealer;
-import practice.homework.entity.Rule;
-import practice.homework.entity.User;
+import practice.homework.entity.*;
 
 import java.util.Scanner;
 

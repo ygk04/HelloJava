@@ -57,7 +57,7 @@ public class Rule {
             winner = user.getName();
             VICTORY_USER++;
         } else if (userScore < BLACKJACK_SCORE && (userScore == dealerScore)){
-            winner = "draw";
+            winner = "무승부";
         } else {
             winner = dealer.getName();
             VICTORY_DEALER++;

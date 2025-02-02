@@ -1,5 +1,6 @@
 package practice.homework.entity;
 
+import java.util.Collections;
 import java.util.Stack;
 
 public class CardDeck {
@@ -12,7 +13,7 @@ public class CardDeck {
     public CardDeck() {
         cardDeck = new Stack<>();
         init();
-
+        shuffle();
     }
            // 초기화에서 셔플 문제, 해결 해야됨
     private void init(){
@@ -24,7 +25,12 @@ public class CardDeck {
         }
     }
 
+    public void shuffle() {
+        Collections.shuffle(cardDeck);
+    }
+
     public Card getCard() {
-        return null;
+
+        return cardDeck.pop();
     }
 }
