@@ -22,20 +22,20 @@ public class Rule {
 
     public int Score(List<Card> cards){
         int i = 0;
-        int aceCount = 0;
+        int aceNumber = 0;
 
         for (Card card : cards) {
             int value = card.getNumber().getValues()[0];
             if (value == 1) {
                 value = 11;
-                aceCount++;
+                aceNumber++;
             }
             i += value;
         }
 
-        while (i > 21 && aceCount > 0) {
+        while (i > 21 && aceNumber > 0) {
             i -= 10;
-            aceCount--;
+            aceNumber--;
         }
 
         return i;

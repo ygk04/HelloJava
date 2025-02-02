@@ -10,6 +10,8 @@ public class BlackJack {
 
         BlackJacktest game = new BlackJacktest(new Rule(), new Dealer(), new User("ygk"), new CardDeck());
 
+        game.start();
+        game.play();
     }
 
 

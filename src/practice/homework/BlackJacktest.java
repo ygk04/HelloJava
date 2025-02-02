@@ -75,7 +75,7 @@ public class BlackJacktest {
         while (continueDrawing && rule.Score(user.getHandCards()) <= rule.getBLACKJACK_SCORE()) {
             System.out.println("현재 나의 숫자는 : " + rule.Score(user.getHandCards())
                     +" 이고 카드는 " + user.getHandCards().size() + "장 입니다");
-            System.out.print("카드를 더 받으시겠습니까? (H/S): ");
+            System.out.print("카드를 더 받으시겠습니까? (H/S): "); //Hit, Stay
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("H")) {
