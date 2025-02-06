@@ -1,5 +1,23 @@
 package chapter07.lecture;
 
-public class Animal {
+// 추상 클래스 정의
+public abstract class Animal {
     String name; // 지어준 이름
+
+    protected Animal() {}
+
+    protected Animal(String name) {
+        this.name = name;
+    }
+
+    // 공통 메소드
+    public void makeSoundWileMoving() {
+        move();
+        makeSound();
+    }
+
+    // 추상 메소드 정의 (구현을 강제)
+    // 추상 메소드 최소 1개 이상이라면  추상 클래스로 변경 필요
+    abstract protected void makeSound();
+    abstract protected void move();
 }
