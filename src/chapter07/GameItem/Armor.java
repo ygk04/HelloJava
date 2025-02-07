@@ -4,10 +4,15 @@ public class Armor extends GameItems {
 
     String name;
 
-    public Armor() {super("방어구");}
 
+    public Armor() {
+        super("방어구", "방패",true );
+    }
     @Override
     public void Use() {
-        System.out.println(name + "거래가 가능합니다");
+        System.out.println(classType+name + type);
     }
+
 }
+
+

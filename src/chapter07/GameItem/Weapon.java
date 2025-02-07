@@ -4,12 +4,12 @@ public class Weapon extends GameItems {
 
     String name;
 
-    public Weapon() {super("무기");}
+    public Weapon() {super("무기","검",true);}
 
 
     @Override
     public void Use() {
-        System.out.println(name +"거래가 가능합니다");
+        System.out.println(classType+name + type);
     }
 
 }
