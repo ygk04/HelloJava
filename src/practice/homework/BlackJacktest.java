@@ -1,9 +1,6 @@
 package practice.homework;
 
-import practice.homework.entity.CardDeck;
-import practice.homework.entity.Dealer;
-import practice.homework.entity.Rule;
-import practice.homework.entity.User;
+import practice.homework.entity.*;
 
 import java.util.Scanner;
 
@@ -12,6 +9,7 @@ public class BlackJacktest {
     private Dealer dealer;
     private User user;
     private CardDeck cardDeck;
+
 
     public BlackJacktest(Rule rule, Dealer dealer, User user, CardDeck cardDeck) {
         this.rule = rule;
@@ -40,9 +38,12 @@ public class BlackJacktest {
         user.getHandCards().clear();
     }
 
-    public void play() {
-        System.out.println(" 시작하겠습니다.");
-
+    public void play( ) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println(" 블랙잭을 시작하겠습니다.");
+        System.out.println("베팅 해주세요");
+        System.out.println("베팅:");
+        int chip = sc.nextInt();
         initialDeal();
         dealerTurn();
         userTurn();

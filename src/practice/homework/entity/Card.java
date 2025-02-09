@@ -17,7 +17,7 @@ public class Card {
     }
 
     public Number getNumber() {
-        return null;
+        return number;
     }
 
     enum Number {

@@ -9,6 +9,7 @@ public class Dealer {
     private String name = "딜러";
     private int score = 0;
 
+
     public String getName() {
         return name;
     }

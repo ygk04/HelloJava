@@ -3,6 +3,7 @@ package practice.homework.entity;
 import java.util.List;
 
 public class Rule {
+    private User user;
     private int VICTORY_DEALER = 0;
     private int VICTORY_USER = 0;
 
@@ -19,6 +20,7 @@ public class Rule {
     public int getBLACKJACK_SCORE() {
         return BLACKJACK_SCORE;
     }
+
 
     public int Score(List<Card> cards){
         int i = 0;
@@ -52,18 +54,29 @@ public class Rule {
             VICTORY_USER++;
         } else if (BLACKJACK_SCORE < dealerScore && userScore < BLACKJACK_SCORE) {
             winner = user.getName();
+
             VICTORY_USER++;
         } else if (userScore < BLACKJACK_SCORE && dealerScore < userScore) {
             winner = user.getName();
+
             VICTORY_USER++;
         } else if (userScore < BLACKJACK_SCORE && (userScore == dealerScore)){
-            winner = "draw";
-        } else {
+            winner = "무승부";
+        } else if (userScore < BLACKJACK_SCORE && BLACKJACK_SCORE == dealerScore) {
             winner = dealer.getName();
+
+            VICTORY_DEALER++;
+        }else {
+            winner = dealer.getName();
+
             VICTORY_DEALER++;
         }
 
         return winner;
+
+
     }
+
+
 }
 
