@@ -32,6 +32,8 @@ public class Car {
         this.fuel = fuel;
         this.purchaseDay = purchaseDay;
     }
+
+
     // endregion
 
     //  region 게터
